@@ -1,0 +1,42 @@
+@keyframes loadingpage {
+    0%{
+        opacity: 0%;
+    }
+
+    22%{
+        opacity: 22%;
+    }
+
+    55%{
+        opacity: 55%;
+    }
+
+    80%{
+        opacity: 80%;
+    }
+
+    0%{
+        opacity: 100%;
+    }
+}
+
+@keyframes moves {
+    from {
+     position: relative;
+     left: -100px;
+    }
+
+    to {
+        position: relative;
+        left: 0;
+    }
+}
+
+body{
+    animation:loadingpage ease-in-out 1.5s ;
+}
+
+header {
+    animation: loadingpage ease-in 0.5s;
+}
+

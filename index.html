@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StartFish</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/anima.css">
+    <script src="https://kit.fontawesome.com/d2e15d65bb.js" crossorigin="anonymous"></script>
+</head>
+<body class="back-01">
+    <header>
+        <nav>
+            <ul>
+                <li class="all back-01"><a href="#">Home</a></li>
+                <li class="all back-01"><a href="#">Tickets</a></li>
+                <li class="all back-01"><a href="#">Plans</a></li>
+                <li class="all back-01"><a href="#">Photos</a></li>
+                <li class="all back-01"><a href="#">Contact</a></li>
+                <i class="fa-solid fa-magnifying-glass all"></i>
+            </ul>
+        </nav>
+     </header>
+     <section>
+        <h1 class="all back-01">Sea Li<span class="color-z">fe</span></h1>
+        <div class="informacao">
+            <p class="all back-01">Dive into an underwater <br>
+            World in Helsinki</p>
+            <button class="btn-blue">Buy Tickets</button>
+        <nav class="navegation-points">
+          <ul id="points">
+            <li class="btn"></li>
+            <li class="btn"></li>
+            <li class="btn"></li>
+            <li class="btn"></li>
+          </ul>
+        </div>
+      <article class="row-icon-zone">
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+      </article>
+      <div class="btn-list">
+        <div class="btn-item" onclick="sliderImg('back-01')"></div>
+        <div class="btn-item" onclick="sliderImg('back-02')"></div>
+        <div class="btn-item" onclick="sliderImg('back-03')"></div>
+      </div>
+     </section>
+     <img src="img/sea-life-logo.webp" alt="" class="logo">
+
+     <script>
+       function sliderImg(item) {
+           //let textColor = document.querySelectorAll('.all')
+          let bgs = document.querySelector('body')
+          let textBg = document.querySelectorAll('.all')
+          bgs.className = item
+          textBg.forEach(items => {
+            items.className = `all ${item}`
+          })     
+       }
+     </script>
+    
+</body>
+</html>
